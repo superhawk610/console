@@ -1,0 +1,27 @@
+{
+  "name": "@superhawk610/console",
+  "version": "1.0.0",
+  "description": "Make your console messages pop!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/superhawk610/console.git"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "colors"
+  ],
+  "author": "Aaron Ross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superhawk610/console/issues"
+  },
+  "homepage": "https://github.com/superhawk610/console#readme",
+  "devDependencies": {
+    "detect-browser": "^3.0.0"
+  }
+}
