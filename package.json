@@ -21,7 +21,7 @@
     "url": "https://github.com/superhawk610/console/issues"
   },
   "homepage": "https://github.com/superhawk610/console#readme",
-  "devDependencies": {
+  "dependencies": {
     "detect-browser": "^3.0.0"
   }
 }
