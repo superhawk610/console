@@ -15,7 +15,7 @@
 const { detect } = require('detect-browser')
 const browser = detect()
 
-if (!browser || (browser.name !== 'chrome' || browser.name !== 'firefox')) {
+if (!browser || (browser.name !== 'chrome' && browser.name !== 'firefox')) {
   console.log(
     'WARNING: @superhawk610/console is only supported on Chromium-based/Firefox browsers.'
   )
