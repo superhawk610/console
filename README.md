@@ -6,6 +6,6 @@ _Original Gist [here](https://gist.github.com/bvaughn/810d50d6ade25b784728873daa
 
 ### Make your console logs **POP**!
 
-![demo](screenshots/overview.jpg)
+![demo](https://raw.githubusercontent.com/superhawk610/console/master/screenshots/overview.jpg)
 
 **NOTE:** This will only work in Chromium-based browsers. For Node support, please use [chalk](https://www.npmjs.com/package/chalk).
