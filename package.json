@@ -1,6 +1,6 @@
 {
   "name": "@superhawk610/console",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make your console messages pop!",
   "main": "index.js",
   "scripts": {
