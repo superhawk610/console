@@ -1,6 +1,6 @@
 /**
  *
- * This package will only work in Chromium-based browsers.
+ * This package will only work in Chromium-based/Firefox browsers.
  * Implementation credit goes to Brian Vaughn (@brian_d_vaughn).
  *
  * Usage:
@@ -15,9 +15,9 @@
 const { detect } = require('detect-browser')
 const browser = detect()
 
-if (!browser || browser.name !== 'chrome') {
+if (!browser || (browser.name !== 'chrome' || browser.name !== 'firefox')) {
   console.log(
-    'WARNING: @superhawk610/console is only supported on Chromium-based browsers.'
+    'WARNING: @superhawk610/console is only supported on Chromium-based/Firefox browsers.'
   )
 }
 
