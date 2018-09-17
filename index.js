@@ -15,12 +15,6 @@
 const { detect } = require('detect-browser')
 const browser = detect()
 
-if (!browser || (browser.name !== 'chrome' && browser.name !== 'firefox')) {
-  console.log(
-    'WARNING: @superhawk610/console is only supported on Chromium-based/Firefox browsers.'
-  )
-}
-
 const COLORS = {
   blue: ['#1E88E5', '#90CAF9'],
   brown: ['#6D4C41', '#D7CCC8'],
@@ -33,6 +27,16 @@ const COLORS = {
 }
 
 const print = Object.entries(COLORS).reduce((api, [name, colors]) => {
+  // skip during testing
+  if (process.env.NODE_ENV === 'test') return
+
+  // warn on unsupported browsers
+  if (!browser || (browser.name !== 'chrome' && browser.name !== 'firefox')) {
+    console.log(
+      'WARNING: @superhawk610/console is only supported on Chromium-based/Firefox browsers.'
+    )
+  }
+
   api[name] = (shortLabel, longerMessage, optionalSuffix = '') =>
     console.log(
       `%c${shortLabel}%c${longerMessage}%c${optionalSuffix}`,
